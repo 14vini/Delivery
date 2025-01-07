@@ -1,12 +1,22 @@
 import { View, Text, Pressable } from 'react-native'
 import React from 'react'
 
-const Section = () => {
+interface Props{
+  name: string;
+  size: 'text-lg' | 'text-xl' | 'text-2-xl'
+  label: string;
+  action: ()=> void;
+}
+
+export function Section ({name, size, label, action} : Props) {
   return (
-    <View>
-      <Text>Section</Text>
+    <View className='w-full flex flex-row items-center justify-between px-4'>
+      <Text className={`${size} font-semibold my-4 self-start`}>
+        {name}
+      </Text>
+      <Pressable>
+          <Text>{label}</Text>
+      </Pressable>
     </View>
   )
 }
-
-export default Section
