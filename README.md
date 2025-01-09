@@ -1,4 +1,4 @@
-to run all th items in the App correcly, you need to run the fake api inside the project:
+to run all the items in the App correctly, you need to run the fake api inside the project:
 npx json-server db.json  
 # Welcome to your Expo app 👋
 
