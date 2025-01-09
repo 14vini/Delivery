@@ -1,6 +1,6 @@
 import { FlatList } from 'react-native'
 import {useState, useEffect} from 'react'
-import CardHorizontalFood from '../food'
+import CardHorizontalFood from './food'
 
 export interface foodProps{
     id: string,
@@ -18,7 +18,7 @@ export function TrendingFoods (){
 
     useEffect(() => {
         async function getFoods() {
-            const response = await fetch("http://localhost:3000/foods")       
+            const response = await fetch("http://192.168.3.233:3000/foods")       
             const data = await response.json();
            setFoods(data);
         }

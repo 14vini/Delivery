@@ -1,7 +1,7 @@
 import {Pressable, Text, Image, View} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-import { foodProps } from '../trending'; 
+import { foodProps } from '..'; 
 
 export default function CardHorizontalFood ({food}: {food: foodProps}){
     return(
