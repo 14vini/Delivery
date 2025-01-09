@@ -3,7 +3,7 @@ import React from 'react'
 
 interface Props{
   name: string;
-  size: 'text-lg' | 'text-xl' | 'text-2-xl'
+  size: 'text-lg' | 'text-xl' | 'text-2xl'
   label: string;
   action: ()=> void;
 }
@@ -15,7 +15,7 @@ export function Section ({name, size, label, action} : Props) {
         {name}
       </Text>
       <Pressable>
-          <Text>{label}</Text>
+          <Text onPress={action}>{label}</Text>
       </Pressable>
     </View>
   )

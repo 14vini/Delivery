@@ -4,6 +4,7 @@ import Header from "../components/header";
 import Banner from "../components/banner";
 import Search from "../components/search";
 import {Section} from "../components/section";
+import {TrendingFoods} from "../components/trending";
 
 
 import Constants from 'expo-constants';
@@ -21,10 +22,12 @@ export default function Index() {
       </View>
       <Section
         name="Comidas em alta"
-        size="text-lg"
-        label='veja mais'
-        action={ () => console.log("CLICOU EM VEJA MAIS ")}
-      />
+        size="text-2xl"
+        label='Veja mais'
+        action={ () => console.log(`CLICOU EM VEJA MAIS`)}
+        />
+        <TrendingFoods/>
+      
     </ScrollView>
   );
 }
