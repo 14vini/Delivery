@@ -1,3 +1,5 @@
+to run all th items in the App correcly, you need to run the fake api inside the project:
+npx json-server db.json  
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
